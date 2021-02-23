@@ -1,45 +1,117 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="outlines.css">
-    <title>Портфолио Junior верстальщика Артема Моталова, бога своей вселенной!</title>
+    <!-- <link rel="stylesheet" href="outlines.css"> це для того щоб бачити смислові блоки-->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
+    <!-- верхня ссилка - для загрузки прикольних шрифтів -->
+    <title>Портфоліо Junior верстальщика Артема Моталова</title>
   </head>
 
   <body>
     <header class="page-header">
-      Контакты в шапке
+      <div class="container">
+        <a class="header-email" href="mailto:artemmmmmotalov@gmail.com">artemmmmmotalov@gmail.com</a>
+        <a class="header-phone" href="tel:+380987415739">+380(98)741-57-39</a>
+      </div>
     </header>
 
     <section class="hero-image">
-      <h1 class="heading">Неопознанный Енот</h1>
-      <p>Junior верстальщик</p>
+      <div class="container">
+        <h1 class="heading"> Артем Моталов </h1>
+          <p> Junior верстальщик</p>
+      </div>
+    </section> 
+
+    <section class="intro"> 
+      <div class="container">
+        <h2 class="subheading">Давайте познайомимося</h2>
+        <figure>
+          <img src="files/user.jpg" width="928" height="599" alt="Моя фотка">
+        </figure>
+
+          <h3>Кілька слів про себе</h3>
+            <p>Нещодавно я пройшов дуже захопливі ділянки життєвого шляху.
+            Я мав досвід в ІТ та працював у сфері кібербезпеки, відкрив і розвинув власний бізнес-проект.
+            Неочікувано для себе (проте може більш очікувано для мого всесвіту) я з превеликим задоволенням пірнув в web-developing і продовжую брати від життя своє. Точніше створювати у житті це своє!</p>
+            <!-- <h3>Пара слов о себе</h3>
+            <p>Некоторое время назад я прошел очень увлекательные отрезки жизненного пути. Я имел опыт работы в ИТ в сфере кибербезопасности, так что какую-то "базу" имею. Неожиданно для себя (но ожидаемо для своей вселенной) я с большущим удовольствием углубился в ИТ и сейчас беру от жизни свое, точнее создаю это свое!</p> -->
+
+          <div class="skills"> <h3> Мої навички </h3>
+            <dl class="skills-list">
+              <dt class="skill-html">HTML</dt>
+              <dd class="level"><div style="width: 60%;">60%</div></dd>
+              <dt class="skill-css">CSS</dt>
+              <dd class="level"><div style="width: 40%;">40%</div></dd>
+            </dl>
+          </div>
+
+
+          <!-- ЯК ЦЕ РОБИЛОСЬ:
+            
+ Под заголовком создадим список определений с классом skills-list. В нём перечислим освоенные технологии HTML и CSS. В качестве «терминов» будут выступать сами технологии, а в «определениях» мы запишем уровень навыка и обернём значение в дополнительный <div>. Вы уже создавали похожий список в части Основы CSS.
+
+<div class="skills">
+  <h3>Мои навыки</h3>
+  <dl class="skills-list">
+    <dt>HTML</dt>
+    <dd><div>60%</div></dd>
+    <dt>CSS</dt>
+    <dd><div>40%</div></dd>
+  </dl>
+</div>
+Добавим классы тегам <dt>. Для навыка HTML это будет класс skill-html, а для CSS — класс skill-css. Тегам <dd> добавим класс level.
+
+<div class="skills">
+  <h3>Мои навыки</h3>
+  <dl class="skills-list">
+    <dt class="skill-html">HTML</dt>
+    <dd class="level"><div>60%</div></dd>
+    <dt class="skill-css">CSS</dt>
+    <dd class="level"><div>40%</div></dd>
+  </dl>
+</div>
+Теперь осталось сделать так, чтобы полоска, указывающая на уровень навыка, была той же ширины, что и указанный в качестве значения процент. Для этого используем атрибут style.
+
+<div class="skills">
+  <h3>Мои навыки</h3>
+  <dl class="skills-list">
+    <dt class="skill-html">HTML</dt>
+    <dd class="level"><div style="width: 60%;">60%</div></dd>
+    <dt class="skill-css">CSS</dt>
+    <dd class="level"><div style="width: 40%;">40%</div></dd>
+  </dl>
+</div> -->   
+
+
+      </div>
     </section>
 
-    <section class="intro">
-      <h2 class="subheading">Давайте познакомимся</h2>
-      <h3>Пара слов о себе</h3>
-      <p>Некоторое время назад я прошел очень увлекательные отрезки жизненного пути. Я имел опыт работы в ИТ в сфере кибербезопасности, так что какую-то "базу" имею. Неожиданно для себя (но ожидаемо для своей вселенной) я с большущим удовольствием углубился в ИТ и сейчас беру от жизни свое, точнее создаю это свое! </p>
-    </section>
+    <section class="portfolio"> 
+      <div class="container">
+        <h2 class="subheading">Мої роботи</h2>
+          <figure class="project-image">
+            <img src="files/project.jpg" width="928" height="536" alt="Cайт магазина товаров для дома">
+          </figure>
+        <h3>Магазин товаров для дома</h3>
+        <p>Мой первый сайт - странный сайт с названием Gloevk </p>
+        <a class="button" href="source/project/index.html">Открыть страницу</a>
 
-    <section>
-      <h2>Блог</h2>
-      <p> 18.02.2021, купил этот курс на три месяца, начал изучать HTML и CSS подробнее </p>
-      <p> 19.02.2021, сверстал это портфолио </p>
-    </section>
-
-    <section class="portfolio">
-      <h2 class="subheading">Мои работы</h2>
-
-      <h3>Магазин товаров для дома</h3>
-      <p>Мой первый сайт.</p>
-
-      <h3>Блог начинающего верстальщика</h3>
-      <p>Статический блог про обучение HTML и CSS.</p>
-    </section>
+        <h3>Блог начинающего верстальщика</h3>
+        <p>Статический блог про обучение HTML и CSS.</p>
+        <p> 18.02.2021, купил этот курс на три месяца, начал изучать HTML и CSS подробнее </p>
+        <p> 19.02.2021, сверстал это портфолио </p>
+        <p> 23.02.2021, прошел курс Основы HTML и CSS </p>
+        <p> 24.02.2021, усовершенствовал портфолио, надо только работ добавить и на GitHub залить </p>
+      </div>
+    </section> 
 
     <footer class="page-footer">
-      Контакты в подвале
+       <div class="container">
+          <a class="footer-email" href="mailto:artemmmmmotalov@gmail.com">artemmmmmotalov@gmail.com</a>
+        <a class="footer-phone" href="tel:+380987415739">+380(98)741-57-39</a>
+       </div>
     </footer>
   </body>
 </html>
